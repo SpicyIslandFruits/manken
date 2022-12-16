@@ -1,4 +1,4 @@
-import usePDF from "../components/PDF";
+import usePDF from "react-use-pdf";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Virtual} from 'swiper';
 
