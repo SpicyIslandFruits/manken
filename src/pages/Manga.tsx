@@ -24,13 +24,15 @@ export function Manga() {
                 >
                     {pdf.map((page, index) => {
                         return (
-                            <SwiperSlide key={page.pageNumber} virtualIndex={index}>
+                            <SwiperSlide key={index} virtualIndex={index}>
                                 <div style={{
                                     display: 'flex',
                                     alignItems: 'center',
-                                    justifyContent: 'center'
+                                    justifyContent: 'center',
+                                    height: '100vh',
+                                    width: '100vw'
                                 }}>
-                                    <page.canvas {...page.props} style={{maxHeight: '100vh', maxWidth: '100vw'}}/>
+                                    <page.canvas {...page.props} style={{maxHeight: '100%', maxWidth: '100%'}}/>
                                 </div>
                             </SwiperSlide>
                         )
